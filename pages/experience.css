@@ -1,0 +1,9 @@
+/* ── Experience Section ── */
+
+#experience .card__list li::before {
+  color: var(--color-accent);
+}
+
+#experience .card__subtitle {
+  font-style: italic;
+}

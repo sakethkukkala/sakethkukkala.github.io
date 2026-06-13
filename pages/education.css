@@ -1,0 +1,11 @@
+/* ── Education Section ── */
+
+#education .card__detail {
+  display: inline-block;
+  background: var(--color-accent-dim);
+  padding: 0.2rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  border: 1px solid rgba(56, 189, 248, 0.1);
+}

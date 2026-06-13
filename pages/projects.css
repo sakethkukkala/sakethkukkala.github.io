@@ -1,0 +1,14 @@
+/* ── Projects Section ── */
+
+#projects .card__list li::before {
+  color: var(--color-accent);
+}
+
+#projects .card__tags {
+  font-style: normal;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}

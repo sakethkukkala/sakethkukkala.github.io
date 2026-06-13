@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saketh Kukkala | Aspiring Network Engineer</title>
+  <meta name="description" content="Portfolio of Saketh Kukkala — Aspiring Network Engineer, CS grad student at Georgia Tech.">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/animations.css">
+
+  <!-- Components -->
+  <link rel="stylesheet" href="components/nav.css">
+  <link rel="stylesheet" href="components/card.css">
+
+  <!-- Pages -->
+  <link rel="stylesheet" href="pages/hero.css">
+  <link rel="stylesheet" href="pages/experience.css">
+  <link rel="stylesheet" href="pages/education.css">
+  <link rel="stylesheet" href="pages/projects.css">
+  <link rel="stylesheet" href="pages/skills.css">
+</head>
+<body>
+
+  <canvas id="network-canvas" class="network-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Portfolio</a>
+      <ul class="nav__links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero__content fade-in-up" style="animation-delay: 0.1s">
+      <h1 class="hero__name">Saketh Kukkala</h1>
+      <h2 class="hero__title">Aspiring Network Engineer</h2>
+      <ul class="hero__contact">
+        <li><a href="mailto:skukkala3@gatech.edu">skukkala3@gatech.edu</a></li>
+        <li><a href="https://linkedin.com/in/sakethkukkala20" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li class="hero__highlight">Lilburn, GA</li>
+        <li class="hero__highlight">U.S. Citizen</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="section">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Work Experience</h2>
+
+      <div class="card fade-in-up" style="animation-delay: 0.3s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">Network Engineer</h3>
+            <p class="card__subtitle">Stealth Startup</p>
+          </div>
+          <span class="card__date">Jan 2024 &ndash; Apr 2025</span>
+        </div>
+        <ul class="card__list">
+          <li>Architected and optimized device-to-cloud network communication protocols, guaranteeing high reliability and low-latency data ingestion.</li>
+          <li>Implemented network security controls and access policies to enhance data privacy and ensure HIPAA compliance.</li>
+          <li>Monitored and optimized data flow paths and cloud network performance to improve application load times by 30%.</li>
+          <li>Developed comprehensive network and system architecture documentation to support highly available, scalable infrastructure.</li>
+        </ul>
+      </div>
+
+      <div class="card fade-in-up" style="animation-delay: 0.4s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">Freelance IT Consultant &mdash; Keth Repair</h3>
+            <p class="card__subtitle">Self-Employed</p>
+          </div>
+          <span class="card__date">Aug 2019 &ndash; Current</span>
+        </div>
+        <ul class="card__list">
+          <li>Configured network routers, firewalls, and VPNs for secure remote access in small business environments.</li>
+          <li>Provided technical support and preventive maintenance strategies for clients, reducing downtime and recurring issues.</li>
+          <li>Built custom computer systems tailored to client needs, balancing performance and budget.</li>
+          <li>Delivered End-to-End IT solutions, from hardware procurement to software installation, ensuring cost efficiency.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section--alt">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Education</h2>
+
+      <div class="card fade-in-up" style="animation-delay: 0.3s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">Master of Science in Computer Science</h3>
+            <p class="card__subtitle">Georgia Institute of Technology &bull; Atlanta, GA</p>
+            <p class="card__detail">Concentration in Artificial Intelligence &bull; GPA: 4.0</p>
+          </div>
+          <span class="card__date">May 2027</span>
+        </div>
+        <p class="card__note">Relevant Coursework: Computer Networks, Knowledge-Based AI, Human Computer Interaction, Software Development Process</p>
+      </div>
+
+      <div class="card fade-in-up" style="animation-delay: 0.4s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">Bachelor of Science in Computer Science</h3>
+            <p class="card__subtitle">University of Georgia &bull; Athens, GA</p>
+            <p class="card__detail">Honors &bull; Dean's List</p>
+          </div>
+          <span class="card__date">May 2024</span>
+        </div>
+        <p class="card__note">Relevant Coursework: Computer Networks, Cloud Computing, Data Security and Privacy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Projects</h2>
+
+      <div class="card fade-in-up" style="animation-delay: 0.3s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">VLAN and Inter-VLAN Routing with Cisco Packet Tracer</h3>
+            <p class="card__tags">Cisco Packet Tracer / GNS3 &bull; ACLs &bull; VLANs</p>
+          </div>
+          <span class="card__date">January 2026</span>
+        </div>
+        <ul class="card__list">
+          <li>Designed and implemented a multi-VLAN network topology using Cisco Packet Tracer/GNS3 to logically segment different departments.</li>
+          <li>Configured a &ldquo;Router-on-a-Stick&rdquo; setup on a single router interface to enable inter-VLAN communication, demonstrating knowledge of Layer 3 routing.</li>
+          <li>Applied basic security measures by restricting inter-VLAN traffic using Access Control Lists (ACLs) to simulate firewall policy enforcement.</li>
+        </ul>
+      </div>
+
+      <div class="card fade-in-up" style="animation-delay: 0.4s">
+        <div class="card__header">
+          <div>
+            <h3 class="card__title">Network Traffic Analysis with Wireshark</h3>
+            <p class="card__tags">Wireshark &bull; TCPDump &bull; OSI Model</p>
+          </div>
+          <span class="card__date">February 2026</span>
+        </div>
+        <ul class="card__list">
+          <li>Used Wireshark to capture and analyze network traffic (TCP/IP, HTTP, DNS) to understand the OSI model layers and packet structure.</li>
+          <li>Identified common network protocols (DHCP, DNS, ARP) and debugged connectivity issues by examining packet headers and payloads.</li>
+          <li>Documented findings on latency, handshake processes, and network behavior to demonstrate foundational troubleshooting and analysis skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Certifications -->
+  <section id="skills" class="section section--alt">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Skills &amp; Certifications</h2>
+
+      <div class="skills-grid fade-in-up" style="animation-delay: 0.3s">
+        <div class="skill-card">
+          <h3 class="skill-card__title">CompTIA A+</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: June 2026</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">CompTIA Network+</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: July 2026</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">CompTIA Security+</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: August 2026</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">Cisco Certified Network Associate (CCNA)</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: October 2026</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">Cisco Certified Network Professional (CCNP)</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: December 2026</p>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">AWS Certified Cloud Practitioner</h3>
+          <span class="skill-card__status skill-card__status--progress">In Progress</span>
+          <p class="skill-card__expected">Expected: February 2027</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Saketh Kukkala. All rights reserved.</p>
+  </footer>
+
+  <script src="components/network-bg.js"></script>
+</body>
+</html>

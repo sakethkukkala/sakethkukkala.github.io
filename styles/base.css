@@ -1,0 +1,67 @@
+/* ── Reset & Variables ── */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-dark: #141e30;
+  --color-bg-light: #f8f9fb;
+  --color-bg-alt: #eff1f5;
+  --color-accent: #38bdf8;
+  --color-accent-dim: rgba(56, 189, 248, 0.12);
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-dark: #1e293b;
+  --color-text-dark-secondary: #475569;
+  --color-white: #ffffff;
+  --color-card-shadow: rgba(0, 0, 0, 0.06);
+  --color-card-hover-shadow: rgba(0, 0, 0, 0.12);
+
+  --font-sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --max-width: 900px;
+  --nav-height: 56px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  background: var(--color-bg-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Network Canvas Background ── */
+.network-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--color-bg-dark);
+}
