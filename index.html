@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saketh Kukkala | Aspiring Network Engineer</title>
-  <meta name="description" content="Portfolio of Saketh Kukkala — Aspiring Network Engineer, CS grad student at Georgia Tech.">
+  <title>Saketh Kukkala</title>
+  <meta name="description" content="Portfolio of Saketh Kukkala, CS grad student at Georgia Tech.">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/base.css">
@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="pages/experience.css">
   <link rel="stylesheet" href="pages/education.css">
   <link rel="stylesheet" href="pages/projects.css">
+  <link rel="stylesheet" href="pages/client-builds.css">
   <link rel="stylesheet" href="pages/skills.css">
 </head>
 <body>
@@ -26,14 +27,26 @@
   <canvas id="network-canvas" class="network-canvas"></canvas>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav" id="site-nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">Portfolio</a>
-      <ul class="nav__links">
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__links" id="nav-menu">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#client-builds">Client Builds</a></li>
+        <li><a href="#certifications">Certifications</a></li>
       </ul>
     </div>
   </nav>
@@ -41,10 +54,18 @@
   <!-- Hero -->
   <section id="hero" class="hero">
     <div class="hero__content fade-in-up" style="animation-delay: 0.1s">
+      <img
+        class="hero__photo"
+        src="assets/profile.png"
+        alt="Saketh Kukkala"
+        width="160"
+        height="160"
+      >
       <h1 class="hero__name">Saketh Kukkala</h1>
-      <h2 class="hero__title">Aspiring Network Engineer</h2>
+      <p class="hero__tagline">Seeking a new opportunity to thrive with a team and help it grow.</p>
       <ul class="hero__contact">
-        <li><a href="mailto:skukkala3@gatech.edu">skukkala3@gatech.edu</a></li>
+        <li><a href="tel:+16787498433">(678) 749-8433</a></li>
+        <li><a href="mailto:saketh.cih@gmail.com">saketh.cih@gmail.com</a></li>
         <li><a href="https://linkedin.com/in/sakethkukkala20" target="_blank" rel="noopener">LinkedIn</a></li>
         <li class="hero__highlight">Lilburn, GA</li>
         <li class="hero__highlight">U.S. Citizen</li>
@@ -60,8 +81,8 @@
       <div class="card fade-in-up" style="animation-delay: 0.3s">
         <div class="card__header">
           <div>
-            <h3 class="card__title">Network Engineer</h3>
-            <p class="card__subtitle">Stealth Startup</p>
+            <h3 class="card__title">Cloud Infrastructure Engineer</h3>
+            <p class="card__subtitle">Senior Shield Technologies Inc. (Startup)</p>
           </div>
           <span class="card__date">Jan 2024 &ndash; Apr 2025</span>
         </div>
@@ -76,7 +97,7 @@
       <div class="card fade-in-up" style="animation-delay: 0.4s">
         <div class="card__header">
           <div>
-            <h3 class="card__title">Freelance IT Consultant &mdash; Keth Repair</h3>
+            <h3 class="card__title">Freelance IT Consultant &mdash; SakethBuilds</h3>
             <p class="card__subtitle">Self-Employed</p>
           </div>
           <span class="card__date">Aug 2019 &ndash; Current</span>
@@ -99,13 +120,12 @@
       <div class="card fade-in-up" style="animation-delay: 0.3s">
         <div class="card__header">
           <div>
-            <h3 class="card__title">Master of Science in Computer Science</h3>
+            <h3 class="card__title">Online Master of Science in Computer Science</h3>
             <p class="card__subtitle">Georgia Institute of Technology &bull; Atlanta, GA</p>
-            <p class="card__detail">Concentration in Artificial Intelligence &bull; GPA: 4.0</p>
+            <p class="card__detail">Concentration in Artificial Intelligence</p>
           </div>
           <span class="card__date">May 2027</span>
         </div>
-        <p class="card__note">Relevant Coursework: Computer Networks, Knowledge-Based AI, Human Computer Interaction, Software Development Process</p>
       </div>
 
       <div class="card fade-in-up" style="animation-delay: 0.4s">
@@ -159,41 +179,61 @@
     </div>
   </section>
 
-  <!-- Skills & Certifications -->
-  <section id="skills" class="section section--alt">
+  <!-- Client Builds -->
+  <section id="client-builds" class="section section--alt">
     <div class="section__inner">
-      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Skills &amp; Certifications</h2>
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Client Builds</h2>
+
+      <div class="builds-grid fade-in-up" style="animation-delay: 0.3s">
+        <article class="build-card">
+          <img
+            class="build-card__image"
+            src="assets/client_builds/image2.jpg"
+            alt="Custom white NZXT H6 Flow PC build with Ryzen 9 9950X3D and RTX 5070 Ti"
+            loading="lazy"
+          >
+          <div class="build-card__body">
+            <h3 class="build-card__title">White RTX Gaming Build</h3>
+            <p class="build-card__meta">Ryzen 9 9950X3D &bull; 32GB 6000 MHz &bull; RTX 5070 Ti &bull; NZXT H6 Flow</p>
+          </div>
+        </article>
+
+        <article class="build-card">
+          <img
+            class="build-card__image"
+            src="assets/client_builds/IMG_3091.jpg"
+            alt="Black and white upgrade build with Intel i7-14900K and existing GTX 960"
+            loading="lazy"
+          >
+          <div class="build-card__body">
+            <h3 class="build-card__title">Black &amp; White Upgrade Build</h3>
+            <p class="build-card__meta">Upgraded i7-4790 to i7-14900K with 32GB RAM; kept the existing GTX 960</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Certifications</h2>
 
       <div class="skills-grid fade-in-up" style="animation-delay: 0.3s">
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA A+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: June 2026</p>
+          <p class="skill-card__expected">Expected: May 2026</p>
         </div>
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA Network+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: July 2026</p>
+          <p class="skill-card__expected">Expected: June 2026</p>
         </div>
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA Security+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: August 2026</p>
-        </div>
-        <div class="skill-card">
-          <h3 class="skill-card__title">Cisco Certified Network Associate (CCNA)</h3>
-          <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: October 2026</p>
-        </div>
-        <div class="skill-card">
-          <h3 class="skill-card__title">Cisco Certified Network Professional (CCNP)</h3>
-          <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: December 2026</p>
-        </div>
-        <div class="skill-card">
-          <h3 class="skill-card__title">AWS Certified Cloud Practitioner</h3>
-          <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: February 2027</p>
+          <p class="skill-card__expected">Expected: July 2026</p>
         </div>
       </div>
     </div>
@@ -205,5 +245,6 @@
   </footer>
 
   <script src="components/network-bg.js"></script>
+  <script src="components/nav.js"></script>
 </body>
 </html>

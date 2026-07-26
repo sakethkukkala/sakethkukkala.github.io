@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav__logo {
@@ -36,9 +37,52 @@
   color: #7dd3fc;
 }
 
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+  cursor: pointer;
+  color: var(--color-accent);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.nav__toggle:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.nav__toggle-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav.is-open .nav__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav.is-open .nav__toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.is-open .nav__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav__links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav__links a {
@@ -69,12 +113,63 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .nav__inner {
+    padding: 0 1rem;
+  }
+
+  .nav__logo {
+    font-size: 1.15rem;
+  }
+
+  .nav__toggle {
+    display: inline-flex;
+  }
+
   .nav__links {
-    gap: 1rem;
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 1rem;
+    left: auto;
+    min-width: 220px;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem;
+    background: rgba(20, 30, 48, 0.98);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .nav.is-open .nav__links {
+    display: flex;
+  }
+
+  .nav__links li {
+    width: 100%;
   }
 
   .nav__links a {
-    font-size: 0.8rem;
+    display: block;
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+  }
+
+  .nav__links a::after {
+    display: none;
+  }
+
+  .nav__links a:hover {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--color-accent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__toggle-bar,
+  .nav__links a {
+    transition: none;
   }
 }

@@ -1,0 +1,51 @@
+/* ── Client Builds Section ── */
+
+.builds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.build-card {
+  background: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px var(--color-card-shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.build-card:hover {
+  box-shadow: 0 6px 24px var(--color-card-hover-shadow);
+  transform: translateY(-3px);
+}
+
+.build-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.build-card__body {
+  padding: 1.25rem 1.35rem 1.4rem;
+}
+
+.build-card__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-bg-dark);
+  margin-bottom: 0.35rem;
+}
+
+.build-card__meta {
+  font-size: 0.85rem;
+  color: var(--color-text-dark-secondary);
+  line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+  .builds-grid {
+    grid-template-columns: 1fr;
+  }
+}
