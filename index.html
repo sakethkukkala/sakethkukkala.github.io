@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="pages/projects.css">
   <link rel="stylesheet" href="pages/client-builds.css">
   <link rel="stylesheet" href="pages/skills.css">
+  <link rel="stylesheet" href="pages/contact.css">
 </head>
 <body>
 
@@ -47,6 +48,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#client-builds">Client Builds</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -201,7 +203,7 @@
         <article class="build-card">
           <img
             class="build-card__image"
-            src="assets/client_builds/IMG_3091.jpg"
+            src="assets/client_builds/IMG_3091.JPG"
             alt="Black and white upgrade build with Intel i7-14900K and existing GTX 960"
             loading="lazy"
           >
@@ -223,19 +225,60 @@
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA A+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: May 2026</p>
+          <p class="skill-card__expected">Expected: August 2026</p>
         </div>
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA Network+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: June 2026</p>
+          <p class="skill-card__expected">Expected: October 2026</p>
         </div>
         <div class="skill-card">
           <h3 class="skill-card__title">CompTIA Security+</h3>
           <span class="skill-card__status skill-card__status--progress">In Progress</span>
-          <p class="skill-card__expected">Expected: July 2026</p>
+          <p class="skill-card__expected">Expected: December 2026</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="section__inner">
+      <h2 class="section__heading fade-in-up" style="animation-delay: 0.2s">Contact Me</h2>
+      <p class="contact-intro fade-in-up" style="animation-delay: 0.25s">
+        Open to new opportunities — send a message and I’ll get back to you.
+      </p>
+
+      <form class="contact-form fade-in-up" id="contact-form" style="animation-delay: 0.3s">
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-name">Name</label>
+            <input class="contact-form__input" id="contact-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-email">Email</label>
+            <input class="contact-form__input" id="contact-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="contact-subject">Subject</label>
+          <input class="contact-form__input" id="contact-subject" name="subject" type="text" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="contact-message">Message</label>
+          <textarea class="contact-form__textarea" id="contact-message" name="message" required></textarea>
+        </div>
+
+        <div class="contact-form__actions">
+          <button class="contact-form__submit" type="submit">Send Message</button>
+          <p class="contact-form__hint">
+            Or email me at
+            <a href="mailto:saketh.cih@gmail.com">saketh.cih@gmail.com</a>
+          </p>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -246,5 +289,6 @@
 
   <script src="components/network-bg.js"></script>
   <script src="components/nav.js"></script>
+  <script src="components/contact-form.js"></script>
 </body>
 </html>
