@@ -57,8 +57,11 @@
   object-fit: cover;
   object-position: center top;
   margin: 0 auto 1.5rem;
-  border: 3px solid rgba(56, 189, 248, 0.35);
-  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.08);
+  border: 3px solid var(--color-accent);
+  box-shadow:
+    0 0 0 6px rgba(56, 189, 248, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.35);
+  background: var(--color-bg-dark);
 }
 
 .hero__name {
@@ -80,10 +83,11 @@
 .hero__tagline {
   font-size: clamp(0.95rem, 2.2vw, 1.05rem);
   font-weight: 400;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   max-width: 28rem;
   margin: 0 auto 1rem;
   line-height: 1.5;
+  opacity: 0.9;
 }
 
 .hero__contact {
